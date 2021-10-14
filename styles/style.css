@@ -55,16 +55,19 @@ main {
 }
 
 .nav-item {
-    padding: 0 0.5rem;
+    padding: 0 2rem;
     font-size: 1rem;
 }
 
 #name {
-    font-size: 7rem;
+    font-size: 8.5rem;
+    padding-left: 0.5rem;
 }
 
 address {
-    font-size: 2rem;
+    font-size: 1rem;
+    padding-right: 3.5rem;
+    padding-bottom: 1.5rem;
 }
 
 #three {
