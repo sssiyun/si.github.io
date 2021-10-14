@@ -68,7 +68,7 @@ address {
     font-size: 1rem;
     padding-right: 3.5rem;
     padding-bottom: 1.5rem;
-    align-self: bottom;
+    align-self: flex-end;
 }
 
 #three {
