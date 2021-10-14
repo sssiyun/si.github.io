@@ -1,13 +1,38 @@
+html {
+  font-size: 100%;
+}
 body {
   width: 600px;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 h1 {
-    font-size: 60px;
-    text-align: center;
-  }
-  
+  font-size: 60px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration-line: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  text-decoration-line: overline;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+}

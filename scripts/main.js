@@ -11,25 +11,25 @@ myImage.onclick = function () {
 }
 
 //个性化欢迎语
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-function setUserName() {
-    let myName = prompt('请输入你的名字。');
-    if(!myName || myName === null) {
-      setUserName();
-    } else {
-      localStorage.setItem('name', myName);
-      myHeading.innerHTML = 'Nice to meet you, ' + myName;
-    }
-  }
+// let myButton = document.querySelector('button');
+// let myHeading = document.querySelector('h1');
+// function setUserName() {
+//     let myName = prompt('请输入你的名字。');
+//     if(!myName || myName === null) {
+//       setUserName();
+//     } else {
+//       localStorage.setItem('name', myName);
+//       myHeading.innerHTML = 'Nice to meet you, ' + myName;
+//     }
+//   }
 
-if (!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Nice to meet you, ' + storedName;
-}
+// if (!localStorage.getItem('name')) {
+//     setUserName();
+// } else {
+//     let storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Nice to meet you, ' + storedName;
+// }
 
-myButton.onclick = function() {
-    setUserName();
- }
+// myButton.onclick = function() {
+//     setUserName();
+//  }
