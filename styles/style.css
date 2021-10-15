@@ -7,8 +7,12 @@ body {
   font-family: "Rubik", sans-serif;
 }
 h1 {
-  font-size: 60px;
+  font-size: 65px;
   text-align: center;
+}
+
+p{
+  font-size: 22px;
 }
 
 a:link {
@@ -83,7 +87,6 @@ address {
 }
 
 #about{
-  font-size: 11vh;
   font-family: "Comfortaa", cursive;
   background-color: black;
   color: aliceblue;
@@ -99,4 +102,5 @@ address {
 #me{
   width: 100%;
   text-align: center;
+  padding-top: 3vh;
 }
