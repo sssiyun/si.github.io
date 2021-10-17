@@ -12,7 +12,7 @@ h1 {
 }
 
 p{
-  font-size: 21px;
+  font-size: 1.25rem;
   margin-inline-start: 4rem;
 }
 
@@ -93,7 +93,7 @@ address {
   font-family: "Comfortaa", cursive;
   background-color: black;
   color: aliceblue;
-  height: 15vh;
+  height: 7rem;
   width: 35vw;
   padding-right: 2rem;
   display: flex;
