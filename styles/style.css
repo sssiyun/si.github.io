@@ -113,3 +113,36 @@ address {
   display: flex;
   justify-content: space-between;
 }
+
+#experience {
+  height: 88vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 12vh;
+}
+
+#head-middle{
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  font-family:  "Comfortaa", cursive;
+}
+
+#education{
+  font-family: "Comfortaa", cursive;
+  background-color: white;
+  color: black;
+  height: 15vh;
+  width: 35vw;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

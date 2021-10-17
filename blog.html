@@ -2,38 +2,54 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>syl</title>
     <meta name="author" content="Siyun" />
     <meta name="description" content="Siyun's personal website: This website is to introduce
                      myself and the project I done." />
-    <link rel="shortcut icon" href="doggy.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="doggy.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKHNFVGZ2D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-YKHNFVGZ2D');
+    </script>
+</head>
 
 <script src="scripts/main.js" defer></script>
 
+
 <body>
-    <div class="positioned">
-        <div class="wrapper">
-            <nav>
-                <div class="box1">
-                    <h3><a href="index.html">About</a></h3>
-                </div>
-                <div class="box2">
-                    <h3><a href="resume.html">Resume</a></h3>
-                </div>
-                <div class="box3">
-                    <h3><a href="blog.html">Blog</a></h3>
-                </div>
-            </nav>
+    <nav>
+        <div class="nav-item">
+            <h3><a href="index.html">About</a></h3>
         </div>
-    </div>
-    <h3>To be continued...</h3>
+        <div class="nav-item">
+            <h3><a href="resume.html">Resume</a></h3>
+        </div>
+        <div class="nav-item">
+            <h3><a href="blog.html">Blog</a></h3>
+        </div>
+    </nav>
+    <main>
+        <div id="experience">
+            <div id="head-middle">
+                <h1>Blog</h1>
+            </div>
+            <div id="introduce">
+                <p>Here's my photograph gallery and some of funny notable things.
+                </p>
+            </div>
+        </div>
+    </main>
 
 </body>
 
