@@ -13,7 +13,7 @@ h1 {
 
 p{
   font-size: 1.25rem;
-  margin-inline-start: 4rem;
+  
 }
 
 a:link {
@@ -139,7 +139,7 @@ address {
   font-family: "Comfortaa", cursive;
   background-color: white;
   color: black;
-  height: 15vh;
+  height: 7rem;
   width: 35vw;
   padding-right: 2rem;
   display: flex;
