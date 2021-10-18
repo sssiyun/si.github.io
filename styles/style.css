@@ -4,16 +4,31 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 h1 {
   font-size: 65px;
   text-align: center;
 }
 
-p{
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-block-end: 0.5em;
+}
+
+ul{
   font-size: 1.25rem;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-block-start: 0.5em;
+  list-style-type: disclosure-closed;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 a:link {
@@ -25,6 +40,10 @@ a:visited {
 }
 a:hover {
   text-decoration-line: overline;
+}
+
+i {
+  font-size: 1rem;
 }
 
 nav {
@@ -66,7 +85,7 @@ main {
 }
 
 #name {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 14vw;
   padding-left: 0.5rem;
 }
@@ -89,7 +108,7 @@ address {
   padding-top: 12vh;
 }
 
-#about{
+#about {
   font-family: "Comfortaa", cursive;
   background-color: black;
   color: aliceblue;
@@ -101,13 +120,12 @@ address {
   justify-content: flex-end;
 }
 
-
-#me{
+#me {
   width: 100%;
   text-align: left;
 }
 
-#icon{
+#icon {
   padding: 1rem;
   width: 140px;
   display: flex;
@@ -124,7 +142,7 @@ address {
   padding-top: 12vh;
 }
 
-#head-middle{
+#head-middle {
   height: 15vh;
   width: 100%;
   display: flex;
@@ -132,10 +150,10 @@ address {
   justify-content: center;
   color: white;
   background-color: black;
-  font-family:  "Comfortaa", cursive;
+  font-family: "Comfortaa", cursive;
 }
 
-#education{
+#education {
   font-family: "Comfortaa", cursive;
   background-color: white;
   color: black;
@@ -145,4 +163,32 @@ address {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+#internship {
+  font-family: "Comfortaa", cursive;
+  background-color: black;
+  color: white;
+  height: 7rem;
+  width: 60vw;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#intern-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#specific {
+  margin: 1rem;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
