@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <div id="three" style="align-items: flex-start; height: 138vh;">
+        <div id="three" style="align-items: flex-start; height: 158vh;">
             <div id="internship">
                 <h1>Internship</h1>
             </div>
@@ -93,15 +93,32 @@
                         <i>Mar 2021 - Jul 2021</i>
                     </p>
                 </div>
-                <div>
-                    <h3>Quantitative Strategy Intern</h3>
-                    <p>
-
+                <div id="specific" style="margin-right: 3rem;">
+                    <p style="margin-block-end: 0.2rem; padding-left: 20px;">
+                        RiceQuant is one of the biggest private quantitative trading platforms in China. In the
+                        investment research department, I focus on analyzing indexes and convertible bonds.
                     </p>
+                    <ul>
+                        <li>Based on the CSI 300 index compilation manual, forecast the transferred in and out of stocks
+                            every six months, with an average correction rate of 90%.</li>
+                        <li>Investigate the effect of regular adjustment of CSI 300, CSI 500, and SSE 180. Write a
+                            backtest to track the index and embed a strategy to adjust them in advance on the
+                            announcement day, with an average return of 3% between announcement and adjustment day.</li>
+                        <li>Data wrangling for convertible bonds data. Get nonlinear adjusted Worldquant 101
+                            alpha-factor and calculate their IC. Factors screened with aimed IC, and use them with the
+                            random forest to forecast convertible return. In the backtest, invest in the N stocks with
+                            the highest yields in predicted return every day, and I get the best cumulative gain of 35%
+                            in the half-year test set.</li>
+                        <li>
+                            For initial convertible bonds, use basis, stock, market information of convertible bond,
+                            etc. with rolling random forest to predict the first-day yield, and have a win rate of 70%
+                            in the test set.
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="intern-item" style="justify-content: flex-start;">
-                <div id="specific">
+                <div id="specific" style="margin-left: 3rem;">
                     <p style="margin-block-end: 0.2rem; padding-left: 20px;">
                         Shengen holding group is mainly engaged in trading and steel production and sales. In the
                         futures department, I mainly research the futures and options of rebar and iron.
