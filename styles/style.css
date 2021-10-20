@@ -5,9 +5,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  word-break:break-all;
+  word-wrap: break-word;
 }
 h1 {
   font-size: 65px;
+  font-family: "Comfortaa", cursive;
   text-align: center;
 }
 
@@ -22,7 +25,7 @@ ul{
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-block-start: 0.5em;
   list-style-type: disclosure-closed;
 }
@@ -109,9 +112,8 @@ address {
 }
 
 #about {
-  font-family: "Comfortaa", cursive;
   background-color: black;
-  color: aliceblue;
+  color: white;
   height: 7rem;
   width: 35vw;
   padding-right: 2rem;
@@ -150,11 +152,9 @@ address {
   justify-content: center;
   color: white;
   background-color: black;
-  font-family: "Comfortaa", cursive;
 }
 
 #education {
-  font-family: "Comfortaa", cursive;
   background-color: white;
   color: black;
   height: 7rem;
@@ -166,7 +166,6 @@ address {
 }
 
 #internship {
-  font-family: "Comfortaa", cursive;
   background-color: black;
   color: white;
   height: 7rem;
@@ -183,6 +182,8 @@ address {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
 }
 
 #specific {
@@ -192,3 +193,42 @@ address {
   flex-direction: column;
   justify-content: center;
 }
+
+#project{
+  background-color: black;
+  color: white;
+  height: 7rem;
+  width: 35vw;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#project-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+}
+
+/* .packup #specific{
+  height: 90px;
+}
+
+.packup:before{
+  height: 66px;
+}
+
+.packup:after{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-line-clamp: 4;
+  content: attr(data-content);
+} */
