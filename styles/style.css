@@ -240,7 +240,7 @@ address {
 .container{
   width: 50%;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 @keyframes load{
   from {
@@ -305,6 +305,44 @@ address {
 }
 .bar.expert::before{
   width: calc(90% - 10px);
+}
+
+.bar1{
+  background-color: var(--white);
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: var(--black);
+  font-weight: bold;
+  
+}
+.bar1::before{
+  content:  attr(data-skill);
+  background-color: var(--white);
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  border: solid 2.5px var(--black);
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar1.front::before{
+  background-color: var(--white);
+}
+.bar1.back::before{
+  background-color: var(--white);
+}
+
+.bar1.acca::before{
+  width: calc(92% - 10px);
+}
+
+.bar1.frm::before{
+  width: calc(50% - 10px);
 }
 
 
