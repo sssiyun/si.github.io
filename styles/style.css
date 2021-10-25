@@ -1,13 +1,23 @@
 html {
   font-size: 100%;
 }
+
+:root {
+  --white: #fff;
+  --black: #000000;
+}
+
 body {
+  background-color: var(--white);
+  color: var(--black);
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   word-break:break-all;
   word-wrap: break-word;
 }
+
+
 h1 {
   font-size: 65px;
   font-family: "Comfortaa", cursive;
@@ -36,10 +46,10 @@ p {
 
 a:link {
   text-decoration-line: none;
-  color: black;
+  color: var(--black);
 }
 a:visited {
-  color: black;
+  color: var(--black);
 }
 a:hover {
   text-decoration-line: overline;
@@ -112,8 +122,8 @@ address {
 }
 
 #about {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   height: 7rem;
   width: 35vw;
   padding-right: 2rem;
@@ -150,13 +160,13 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 #education {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   height: 7rem;
   width: 35vw;
   padding-right: 2rem;
@@ -166,8 +176,8 @@ address {
 }
 
 #internship {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   height: 7rem;
   width: 60vw;
   padding-left: 2rem;
@@ -195,8 +205,8 @@ address {
 }
 
 #project{
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   height: 7rem;
   width: 35vw;
   padding-right: 2rem;
@@ -209,12 +219,94 @@ address {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: flex-start;
   margin-left: 3rem;
   padding-block-start: 2rem;
   padding-block-end: 2rem;
 }
+
+#skilltitle {
+  background-color: var(--white);
+  color: var(--black);
+  height: 7rem;
+  width: 35vw;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 6rem;
+}
+
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: var(--white);
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: var(--white);
+  font-weight: bold;
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: var(--black);
+}
+.bar.back::before{
+  background-color: var(--black);
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(85% - 10px);
+}
+.bar.expert::before{
+  width: calc(90% - 10px);
+}
+
 
 /* .packup #specific{
   height: 90px;

@@ -53,7 +53,7 @@
         <div id="three" style="align-items: flex-start;">
             <div style="width : 100%; display: flex; justify-content: flex-end;">
                 <div id="education">
-                    <h1>Education</h1>
+                    <h1 style="word-wrap:normal;word-break:keep-all;">Education</h1>
                 </div>
             </div>
             <div id="USC" style="margin-inline-start: 8rem;">
@@ -84,20 +84,18 @@
             <div id="internship">
                 <h1>Internship</h1>
             </div>
-            <div id="intern-item">
-                <div>
-                    <h2>RiceQuant Co., Ltd.</h2>
-                    <p>
+            <div id="project-item">
+                <div id="specific" style="margin-left: 3rem; width: 65vw;margin-block-start: 2.17rem;">
+                    <h2 style="padding-left: 40px;">RiceQuant Co., Ltd.</h2>
+                    <p style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;padding-left: 40px;">
                         Quantitative Strategy Intern<br>
                         <i>China, Shenzhen</i><br>
                         <i>Mar 2021 - Jul 2021</i>
                     </p>
-                </div>
-                <div id="specific" style="margin-right: 3rem;">
-                    <p style="margin-block-end: 0.2rem; padding-left: 40px;">
+                    <!-- <p style="margin-block-end: 0.2rem; padding-left: 40px;">
                         RiceQuant is one of the biggest private quantitative trading platforms in China. In the
                         investment research department, I focus on analyzing indexes and convertible bonds.
-                    </p>
+                    </p> -->
                     <ul>
                         <li>Based on the CSI 300 index compilation manual, forecast the transferred in and out of stocks
                             every six months, with an average correction rate of 90%.</li>
@@ -117,12 +115,18 @@
                     </ul>
                 </div>
             </div>
-            <div id="intern-item" style="justify-content: flex-start;">
-                <div id="specific" style="margin-left: 3rem;">
-                    <p style="margin-block-end: 0.2rem; padding-left: 40px;">
+            <div id="project-item">
+                <div id="specific" style="margin-left: 3rem; width: 65vw;margin-block-start: 2.17rem;">
+                    <h2 style="padding-left: 40px;">Shengen holding group</h2>
+                    <p style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;padding-left: 40px;">
+                        Commodities Research Intern<br>
+                        <i>China, Guangzhou</i><br>
+                        <i>Jun 2020 - Sep 2020</i>
+                    </p>
+                    <!-- <p style="margin-block-end: 0.2rem; padding-left: 40px;">
                         Shengen holding group is mainly engaged in trading and steel production and sales. In the
                         futures department, I mainly research the futures and options of rebar and iron.
-                    </p>
+                    </p> -->
                     <ul>
                         <li>Collect and organize data and information of the steel industry, track the futures and spot
                             dynamics and write daily report for the data.</li>
@@ -132,18 +136,46 @@
                             iron options)</li>
                     </ul>
                 </div>
-                <div style="margin: 1rem;">
-                    <h2>Shengen holding group </h2>
-                    <p>Commodities Research Intern<br>
-                        <i>China, Guangzhou</i><br>
-                        <i>Jun 2020 - Sep 2020</i>
-                    </p>
-                </div>
             </div>
+            
         </div>
-        <div id="three" style="align-items: flex-end; height: 158vh;">
+        <div id="three" style="align-items: flex-end; height: auto;">
             <div id="project">
                 <h1>Project</h1>
+            </div>
+            <div id="project-item">
+                <div id="specific" style="margin-left: 3rem; width: 65vw;margin-block-start: 2.17rem;">
+                    <h2 style="padding-left: 40px;">Financial Informatics and Simulation</h2>
+                    <p style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;padding-left: 40px;">
+                        Graduate Course Project<br>
+                        <i>University of Southern California</i><br>
+                        <i>Feb 2020 - Apr 2020</i>
+                    </p>
+                    <ul>
+                        <li>Based on Monte Carlo and finite difference method, calculate the price of European call
+                            option and American put option on Amazon in Jun 2020 via MATLAB.</li>
+                        <li>Using GARCH to model the S&P 500 index for the past six months, and forecast its volatility.
+                        </li>
+                        <li>For an asset portfolio containing S&P 500, FTSE 100 and Nikkei 225 three indexes, calculate
+                            its VaR.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="project-item">
+                <div id="specific" style="margin-left: 3rem; width: 65vw;margin-block-start: 2.17rem;">
+                    <h2 style="padding-left: 40px;">Computing Equilibrium of Economy</h2>
+                    <p style="margin-block-start: 0.5rem; margin-block-end: 0.5rem;padding-left: 40px;">
+                        Graduate Course Project<br>
+                        <i>University of Southern California</i><br>
+                        <i>Aug 2019 - Dec 2019</i>
+                    </p>
+                    <ul>
+                        <li>Using MATLAB to find kinds of market equilibrium, including Arrow-Debreu equilibrium,
+                            Sequential market equilibri- um and General equilibrium.</li>
+                        <li>Analysis the result by interpreting optimal risk sharing and the term of interest rates.
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div id="project-item">
                 <div id="specific" style="margin-left: 3rem; width: 65vw;margin-block-start: 2.17rem;">
@@ -209,8 +241,22 @@
                 </div>
             </div>
         </div>
-        <div id="skill">
+        <div id="three" style="align-items: flex-start; justify-content: flex-start;">
+            <div id="skilltitle">
+                <h1>Skill</h1>
+            </div>
+            <div class="container">
+                <div class="bar front expert" data-skill="MATLAB"></div>
+                <div class="bar front advanced" data-skill="Python"></div>
+                <div class="bar front intermediate" data-skill="R"></div>
+                <div class="bar back intermediate" data-skill="SPSS"></div>
+                <div class="bar back basic" data-skill="SQL"></div>
+                <div class="bar back basic" data-skill="HTML"></div>
+                <div class="bar back basic" data-skill="CSS"></div>
 
+
+            </div>
+        </div>
         </div>
     </main>
 
