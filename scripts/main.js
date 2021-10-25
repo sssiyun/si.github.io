@@ -1,11 +1,15 @@
-//点击变换图片
-let myImage = document.querySelector('img');
-
-myImage.onclick = function () {
-    let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/bb1.jpg') {
-        myImage.setAttribute('src', 'images/bb2.jpg');
+function bw() {
+    if (getComputedStyle(document.documentElement).getPropertyValue('--white').trim() == '#fff') {
+        document.documentElement.style.setProperty('--white', '#000000');
+        document.documentElement.style.setProperty('--black', 'rgba(250, 250, 244, 0.973)');
     } else {
-        myImage.setAttribute('src', 'images/bb1.jpg');
+        document.documentElement.style.setProperty('--white', '#fff');
+        document.documentElement.style.setProperty('--black', '#000000');
     }
 }
+
+document.getElementById('blackwhite').addEventListener('click', function(event) {
+    bw();
+}, false);
+
+
