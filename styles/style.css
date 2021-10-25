@@ -156,7 +156,7 @@ address {
     justify-content: space-between;
 }
 
-#exp_title {
+.page_title {
     height: 88vh;
     width: 100%;
     display: flex;
