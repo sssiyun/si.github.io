@@ -87,7 +87,7 @@ main {
     display: flex;
     height: 100vh;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     flex-direction: row;
 }
 
